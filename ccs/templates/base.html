@@ -1,0 +1,232 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<!-- Mirrored from getnajmul.com/theme/ecostudy/v1.2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Nov 2019 12:18:33 GMT -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Getnajmul">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphere Infotech</title>
+
+    <link rel="shortcut icon" href="{% static 'images/logo_ico.ico' %}" type="image/x-icon">
+    <!-- Goole Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="{% static 'assets/bootstrap.min.css' %}">
+    <!-- Font awsome CSS -->
+    <link rel="stylesheet" href="{% static 'assets/font-awesome.min.css' %}">
+    <script src="https://kit.fontawesome.com/fddf7d4d08.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'assets/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/magnific-popup.css' %}">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="{% static 'assets/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/owl.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/animate.css' %}">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="{% static 'assets/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/preloader.css' %}">
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="{% static 'assets/revolution/layers.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/revolution/navigation.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/revolution/settings.css' %}">
+    <!-- Mean Menu-->
+    <link rel="stylesheet" href="{% static 'assets/meanmenu.css' %}">
+    <!-- main style-->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'master.css' %}">
+    <link rel="stylesheet" href="{% static 'responsive.css' %}">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Preloader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<!--========={ EcoStudy Nav }========-->
+
+<header id="header" class="header_1 header_2">
+    <div class="header-top">
+
+        <!--<div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12 header-top-right">
+                   <div class="social_wraper">
+                        <ul class="social-items d-flex list-unstyled">
+                            <li><a href="https://www.facebook.com/ccsahmedabad/" target="_blank"><i class="fab fa-facebook-f fb-icon"></i></a></li>
+                            <li><a href="https://www.instagram.com/ccsahmedabad/" target="_blank"><i class="fab fa-instagram ins-icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 header-top-left">
+                     <ul class="d-flex ">
+                        <li class="nav-item"><a href="#" class="nav-link sign-in js-modal-show"><i class="fa fa-sign-in "></i>Log In</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link join_now js-modal-show"><i class="fa fa-user"></i>Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>-->
+
+          <div class="eco_nav">
+            <div class="container">
+                 <nav class="navbar navbar-expand-md navbar-light bg-faded">
+                    <a class="" href="{% url 'sphere:index' %}"><img src="{% static 'images/logo_ccs.png' %}" alt="logo" height="130" width="250"></a>
+                    <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav lavalamp ml-auto menu">
+                            {% if index %}
+                          <li class="nav-item menu-item current-menu-ite"><a href="{% url 'sphere:index' %}" class="nav-link active">Home</a>
+                            {% else %}
+                            <li class="nav-item menu-item current-menu-ite"><a href="{% url 'sphere:index' %}" class="nav-link">Home</a>
+                            {% endif %}
+                          </li>
+                          {% if about %}
+                          <li class="nav-item single_nav"><a href="{% url 'sphere:about_us' %}" class="nav-link active">About Us</a>
+                            {% else %}
+                          <li class="nav-item single_nav"><a href="{% url 'sphere:about_us' %}" class="nav-link">About Us</a>
+                            {% endif %}
+
+                          </li>
+                            {% if contact %}
+                            <li class="nav-item"><a href="{% url 'sphere:contact_us' %}" class="nav-link active">Contact Us</a></li>
+                            {% else %}
+                            <li class="nav-item"><a href="{% url 'sphere:contact_us' %}" class="nav-link">Contact Us</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+
+                </nav><!-- END NAVBAR -->
+            </div>
+        </div>
+
+    </div>
+</header> <!-- End nav -->
+
+
+{% block body_block %}
+ {% endblock %}
+
+
+ <!--========={ Footer }========-->
+ <footer>
+     <div class="container">
+         <div class="row">
+             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                 <div class="footer_single">
+                     <img src="{% static 'images/logo_ccs.png' %}" alt="" height="130" width="250">
+                     <ul class="list-unstyled contact_info">
+                         <li>hello@ecotheme.com</li>
+                         <li>Call: +88 7380 254 025</li>
+                     </ul>
+                     <div class="social_wraper">
+                         <ul class="social-items d-flex list-unstyled">
+                             <li><a href="https://www.facebook.com/ccsahmedabad/" target="_blank"><i class="fab fa-facebook-f fb-icon"></i></a></li>
+                             <li><a href="https://www.instagram.com/ccsahmedabad/" target="_blank"><i class="fab fa-instagram ins-icon"></i></a></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                 <div class="footer_single footer_signle_item_2">
+                     <h3 class="footer_item_title">Talk to Us</h3>
+                     <ul class="list-unstyled">
+                         <li><a href="#">About us</a></li>
+                         <li><a href="#">Registration</a></li>
+                         <li><a href="#">Blog</a></li>
+                         <li><a href="#">Events</a></li>
+                         <li><a href="#">Contact</a></li>
+                     </ul>
+                 </div>
+             </div>
+
+             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                 <div class="footer_single footer_signle_item_3">
+                     <h3 class="footer_item_title">Popular Courses</h3>
+                     <ul class="list-unstyled">
+                         <li><a href="#">Ecommerce Course<br></a><span>Jony miah</span></li>
+                         <li><a href="#">Learn Ui/UX<br></a><span>Nanson Dvil</span></li>
+                         <li><a href="#">Motion Design<br></a><span>Alex Hope</span></li>
+                     </ul>
+                 </div>
+             </div>
+
+             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                 <div class="footer_single footer_signle_item_4">
+                     <h3 class="footer_item_title">Support</h3>
+                     <ul class="list-unstyled">
+                         <li><a href="#">Documantation</a></li>
+                         <li><a href="#">Faq</a></li>
+                         <li><a href="#">Condition</a></li>
+                         <li><a href="#">Release Status</a></li>
+                     </ul>
+                 </div>
+             </div>
+
+         </div>
+     </div>
+     <div class="copytight_info">
+         <div class="container">
+             <div class="row">
+                 <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-between">
+                     <p>Copyright &copy; Getnajmul 2018</p>
+                     <ul class="nav navbar list-unstyled">
+                         <li><a href="#">Terms</a></li>
+                         <li><a href="#">Condition</a></li>
+                         <li><a href="#">Faq</a></li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </footer><!-- ./ End Footer -->
+
+  <!--============= { Ccroll Top} ===========-->
+ <section id="scroll-top" class="scroll-top">
+     <h2>&nbsp;</h2>
+     <div class="to-top pos-rtive">
+         <a href="#"><i class = "fa fa-arrow-up"></i></a>
+     </div>
+ </section>
+
+ <!-- JavaScript -->
+ <script src="{% static 'jquery-3.2.1.min.js' %}"></script>
+ <script src="{% static 'popper.min.js' %}"></script>
+ <script src="{% static 'bootstrap.min.js' %}"></script>
+ <!-- Revolution Slider -->
+ <script src="{% static 'assets/revolution2/jquery.themepunch.revolution.min.js' %}"></script>
+ <script src="{% static 'assets/revolution2/jquery.themepunch.tools.min.js' %}"></script>
+ <script src="{% static 'jquery.magnific-popup.min.js' %}"></script>
+ <script src="{% static 'owl.carousel.min.js' %}"></script>
+ <script src="{% static 'slick.min.js' %}"></script>
+ <script src="{% static 'jquery.meanmenu.min.js' %}"></script>
+ <script src="{% static 'wow.min.js' %}"></script>
+ <!-- Revolution Extensions -->
+ <script type="text/javascript" src="{% static 'assets/revolution2/extensions/revolution.extension.actions.min.js' %}"></script>
+ <script type="text/javascript" src="{% static 'assets/revolution2/extensions/revolution.extension.carousel.min.js' %}"></script>
+ <script type="text/javascript" src="{% static 'assets/revolution2/extensions/revolution.extension.kenburn.min.js' %}"></script>
+ <script type="text/javascript" src="{% static 'assets/revolution2/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+ <script type="text/javascript" src="{% static 'assets/revolution2/extensions/revolution.extension.migration.min.js' %}"></script>
+ <script type="text/javascript" src="{% static 'assets/revolution2/extensions/revolution.extension.navigation.min.js' %}"></script>
+ <script type="text/javascript" src="{% static 'assets/revolution2/extensions/revolution.extension.parallax.min.js' %}"></script>
+ <script type="text/javascript" src="{% static 'assets/revolution2/extensions/revolution.extension.slideanims.min.js' %}"></script>
+ <script type="text/javascript" src="{% static 'assets/revolution2/extensions/revolution.extension.video.min.js' %}"></script>
+ <script type="text/javascript" src="{% static 'assets/revolution2/revolution.js' %}"></script>
+ <script src="{% static 'js/custom.js' %}"></script>
+
+ </body>
+
+ <!-- Mirrored from getnajmul.com/theme/ecostudy/v1.2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Nov 2019 12:21:01 GMT -->
+ </html>

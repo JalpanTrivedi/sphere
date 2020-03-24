@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block dukh %}
+{{contact}}
+{% endblock %}
+{% block body_block %}
+{% load static %}
+
+
+
+<!--========={ Register Area }========-->
+<section class="register_area">
+    <div class="overlay-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-7 form-content">
+                <!--    <a class="wow fadeInUp" href="index.html"><img src="{% static 'images/logo_ccs.png' %}" alt="logo" height="130" width="250"></a> -->
+                    <p class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">Join the Sphere Infotech</p>
+                    <h2 class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">Fill Enquiry Form <br>to Know More</h2>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-5">
+                    <div class="row">
+                        <div class="form-full-box wow fadeInRight" data-wow-duration="2s" data-wow-delay=".1s">
+                            <div class="form_title">
+                                <h2>Enquiry Form</h2>
+                            </div>
+                            <form>
+                                <div class="register-form">
+                                    <div class="row">
+                                        <div class="col-12 col-xs-12 col-md-12">
+                                            <div class="form-group">
+                                                <input class="form-control" name="name" placeholder="Name" required="" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-xs-12 col-md-12">
+                                            <div class="form-group">
+                                                <input class="form-control" name="email" placeholder="Email" required="" type="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xs-12 col-md-12">
+                                            <div class="form-group">
+                                                <input class="form-control" name="phone" placeholder="Phone Number" required="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xs-12 col-md-12">
+                                            <div class="form-group" >
+                                              <select class="form-control" name="courses" placeholder="Select Course">
+                                              <font style="font-weight: 600;">  <option value="" disabled selected>Select your Course</option> </font>
+                                                <option> One </option>
+                                                <option> Two </option>
+                                              </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xs-12 col-md-12">
+                                            <div class="form-group">
+                                            <textarea class="form-control" placeholder="Type your messsage here"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xs-12 col-md-12 register-btn-box">
+                                            <button class="register-btn" type="submit">Enquire</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- ./ End Register Area section -->
+<br><br><br>
+<!--========={ Contact Info }========-->
+<section class="contact_info_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 p-0">
+               <div class="event_details">
+                    <div class="details_title">
+                        <h3>Get In Touch</h3>
+                    </div>
+                    <div class="event_location_info">
+                        <ul class="list-unstyled">
+                            <li><p class="hall_location">Location</p></li>
+                            <li><p><b>Sphere Infotech</b></p></li>
+                            <li><p>Office No 402</p><span>Sigma Legacy<br> Panjarapol char Rasta<br> Ahmedabad</span></li>
+                            <li><i class="fas fa-envelope-square"></i> &nbsp;<span>info.ccsahmedabad@gmail.com</span></li>
+                            <li><i class="fas fa-phone"></i> &nbsp;<span>+91 99798 46011</span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section> <!-- End Contact Info -->
+
+
+<!--========={ Contact Form }========-->
+
+{% endblock %}

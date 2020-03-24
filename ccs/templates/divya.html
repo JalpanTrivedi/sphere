@@ -1,0 +1,83 @@
+
+{% extends 'base.html' %}
+
+{% block body_block %}
+{% load static%}
+
+<div class="teachers_profile">
+<!--============================
+    Teacher Single Content
+=============================-->
+<section class="teacher-details-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 teacher-detail-left">
+                <div class="teacher_info_wrapper">
+                    <div class="teacger-image">
+                        <img src="{% static 'images/team/dj.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="social_wraper">
+                        <ul class="social-items d-flex list-unstyled">
+                            <li><a href="#"><i class="fab fa-facebook-f fb-icon"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter twitt-icon"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in link-icon"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram ins-icon"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div><!-- Ends: .teacher-detail-left -->
+            <div class="col-sm-8 teacher-detail-right">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="teacher-info">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h3>Name :</h3>
+                                    <span>Divya Jadav</span>
+                                </li>
+                                <li>
+                                    <h3>Designation :</h3>
+                                    <span>Manager- Sphere Infotech</span>
+                                </li>
+                                <li>
+                                    <h3>Experience :</h3>
+                                    <span>3 Years of Teaching Career</span>
+                                </li>
+                                <li>
+                                    <h3>Language :</h3>
+                                    <span>English, Hindi, Sindhi, Gujarati</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="courses_tab_wrapper">
+                            <div class="courses_details_nav_tabs">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" href="#information" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-info-sign"></i>About Insructor</a></li>
+
+                                </ul>
+                            </div>
+
+                            <!-- Tab panes -->
+                            <div class="tab_contents tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active show" id="information">
+                                    <p>A Founder Member at ‘Sphere InfoTech’, Divya is a Ranker with throughout distinction in Bachelor of Computer Applications (B.C.A) from Gujarat University and currently pursuing M.C.A, Divya has also done various certification courses including CCNA and CSPP (Certified Software Professional Programmer) with “A Grade”. Because of her strong Technical skills and a great passion for Coding, she has an expertise not only in Developing Software Projects for various Clients using some of the latest Technologies like Android, Java, PHP, Python, Laravel, Flutter, AWS (Amazon Web Services), React Native, Asp.Net etc. but also Teaches College Level Computer Subjects and latest Technologies to a vast range of students and professionals. She is the Manager at ‘Sphere InfoTech’.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Ends: .teacher-detail-right -->
+        </div>
+    </div>
+</section><!-- Ends: .teacher-details-wrapper -->
+
+
+
+
+</div>
+{% endblock %}

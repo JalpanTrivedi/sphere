@@ -1,0 +1,154 @@
+
+{% extends 'base.html' %}
+{% block dard %}
+{{about}}
+{% endblock %}
+{% block body_block %}
+{% load static %}
+<br>
+<br>
+<!--========={ Take A Tour }========-->
+<section class="take_tour_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-8">
+                <div class="video_img wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
+                    <img src="{% static 'images/team/pallvi-mangal.jpg' %}" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 pl-1">
+                <div class="tour_video_content">
+                    <h2 class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">Founder's Message</h2>
+                    <span class="fa fa-quote-left"></span>
+                    <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s" align="justify">It gives me immense pleasure in welcoming you all to the ‘Center for Computer Studies’. Being very closely associated with Computer Application students for more than 10 years, I very well understand what a student needs. This is the right place for a holistic development of a student.</p>
+                    <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s" align="justify">Our mission is to be the most trusted and respected training Center. For this we aim to provide the best technical knowledge to our students through our well qualified, well read and well experienced Faculty Team.</p>
+                    <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s" align="justify">We very strongly believe in imparting technical skills along with an overall personality development of students in order to make them employable and industry ready.</p>
+                          <span class="fa fa-quote-right"></span>
+                    <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".4s" align="right"><i><b>-Prof. (Dr.) Pallvi Mangal<b></i></p>
+
+                    <div class="video_wrapper  wow fadeIn" data-wow-duration="2s" data-wow-delay=".5s">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- ./ End Take A Tour -->
+
+
+<!--========={ Our Instructiors }========-->
+<section class="our_instructors">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="title">
+                    <h2>Our Team</h2>
+                    <!--<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui similique sunt in culpa qui officia deserunt mollitia animi</p>
+                --></div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div id="team_01" class="owlCarousel">
+                    <div class="single-wrappe ">
+                        <div class="team-single-item wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
+                            <figure>
+                                <div class="member-img">
+                                    <div class="teachars_pro">
+                                        <img src="{% static 'images/team/nr.jpg' %}" alt="member img" class="img-fluid">
+                                    </div>
+                                </div>
+                                <figcaption>
+                                    <div class="member-name">
+                                        <h4><a href="{% url 'sphere:nitignya-sir' %}" title="">Nitigna Raval</a></h4>
+                                        <span>HEAD-INFORMATION TECHNOLOGY</span>
+                                    </div>
+                                    <ul class="social-links list-unstyled">
+                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="single-wrapper ">
+                        <div class="team-single-item wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s">
+                            <figure>
+                                <div class="member-img">
+                                    <div class="teachars_pro">
+                                        <img src="{% static 'images/team/dj1.jpg' %}" alt="member img" class="img-fluid">
+                                    </div>
+                                </div>
+                                <figcaption>
+                                    <div class="member-name">
+                                        <h4><a href="{% url 'sphere:divya-madam' %}" title="">Divya Jadav</a></h4>
+                                        <span>MANAGER <br>SPHERE INFOTECH</span>
+                                    </div>
+                                    <ul class="social-links list-unstyled">
+                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="single-wrapper ">
+                        <div class="team-single-item wow fadeIn" data-wow-duration="2s" data-wow-delay=".4s">
+                            <figure>
+                                <div class="member-img">
+                                    <div class="teachars_pro">
+                                        <img src="{% static 'images/team/as.jpg' %}" alt="member img" class="img-fluid">
+                                    </div>
+                                </div>
+                                <figcaption>
+                                    <div class="member-name">
+                                        <h4><a href="{% url 'sphere:ayushi-madam' %}" title="">Ayushi Shah</a></h4>
+                                        <span>ASST. MANAGER-SPHERE INFOTECH</span>
+                                    </div>
+                                    <ul class="social-links list-unstyled">
+                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                  <!--  <div class="single-wrapper">
+                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                            <figure>
+                                <div class="member-img">
+                                    <div class="teachars_pro">
+                                        <img src="{% static 'images/team/team-05.jpg' %}" alt="member img" class="img-fluid">
+                                    </div>
+                                </div>
+                                <figcaption>
+                                    <div class="member-name">
+                                        <h4><a href="#" title="">Yakailo Mim</a></h4>
+                                        <span>Teacher</span>
+                                    </div>
+                                    <ul class="social-links list-unstyled">
+                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div> -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="{% static 'images/shape_1.png' %}" alt="" class="shape_instructor">
+</section><!-- ./ End Our Instructiors -->
+{% endblock %}
